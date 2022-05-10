@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Создание пользователя</title>
+    </head>
+    <body>
+        <h1>Создание пользователя</h1>
+
+        {% if message %}
+        <p
+            style="
+                border-top: 1px solid #333333;
+                border-bottom: 1px solid #333333;
+                background-color: #eeeeee;
+                padding: 12px 8px;
+            "
+        >
+            {{ message }}
+        </p>
+        {% endif %}
+
+        <a href="/" style="display: block; margin-bottom: 20px">На главную</a>
+
+        <form action="" method="post">
+            <label for="name" style="display: block">Name</label>
+            <input type="text" name="name" style="display: block; margin-bottom: 12px" />
+
+            <label for="surname" style="display: block">Surname</label>
+            <input type="text" name="surname" style="display: block; margin-bottom: 12px" />
+
+            <label for="age" style="display: block">Age</label>
+            <input type="number" name="age" style="display: block; margin-bottom: 12px" />
+
+            <button>Submit</button>
+        </form>
+    </body>
+</html>
